@@ -739,7 +739,7 @@ header {
     .heading-text-sm:before, .heading-text-sm:after {
       height: 90px; }
     .heading-text-sm:before {
-      left: -23px; }
+      left: -22px; }
     .heading-text-sm h2 {
       font-size: 2rem; }
 
@@ -783,10 +783,13 @@ header {
     min-height: 193px;
     padding: 0 30px; }
     .gold-border p {
-      font-size: 17px; } }
+      font-size: 17px; } 
+      .heading-text h2 {     
+        font-size: 2.5rem;}
+    }
 @media (max-width: 375px) {
   .heading-text.heading-text-lg {
-    zoom: 0.8; }
+    zoom: 0.75; }
 
   #our-history-section {
     padding-top: 70px; } }
