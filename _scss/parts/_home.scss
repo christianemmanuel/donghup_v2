@@ -1,0 +1,103 @@
+body.home {
+  background-color: #fff8e8;
+  background-image: url(../../assets/images/home_bg.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: top center;
+  footer {
+    display: none;
+  }
+}
+.main_nav {
+  background-color: #fff8e8;
+  background-image: url(../../assets/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.floating_species {
+  position: absolute;
+  transition: all ease-in-out 500ms;
+  filter: brightness(0) invert(1);
+  -webkit-animation: img-down-up-ani 5s infinite;
+    animation: img-down-up-ani 5s infinite;
+  &:hover,
+  &.show {
+    filter: brightness(1) invert(0);
+  }
+  img {
+    width: 100%;
+    transform: scale(0.7);
+  }
+  &.species_one {
+    top: 340px;
+    left: 0;
+    max-width: 360px;
+    z-index: 2;
+  }
+  &.species_two {
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 850px;
+    z-index: 1;
+  }
+  &.species_three1 {
+    top: 284px;
+    left: 380px;
+    max-width: 290px;
+    z-index: 2;
+  }
+  &.species_three2 {
+    top: 470px;
+    left: 130px;
+    max-width: 880px;
+  }
+  &.species_four {
+    top: 510px;
+    right: 130px;
+    max-width: 230px;
+    z-index: 3;
+  }
+}
+@-webkit-keyframes img-down-up-ani {
+  0% {
+      -webkit-transform:translateY(0);
+      transform:translateY(0);
+  }
+  50% {
+      -webkit-transform:translateY(20px);
+      transform:translateY(20px);
+  }
+  to {
+      -webkit-transform:translateY(0);
+      transform:translateY(0);
+  }
+}
+@keyframes img-down-up-ani {
+  0% {
+      -webkit-transform:translateY(0);
+      transform:translateY(0);
+  }
+  50% {
+      -webkit-transform:translateY(20px);
+      transform:translateY(20px);
+  }
+  to {
+      -webkit-transform:translateY(0);
+      transform:translateY(0);
+  }
+}
+.ocean-background {
+  h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 4px 3px #252525;
+    margin-top: 50px;
+  }
+}
+.ocean-background {
+  padding: 0;
+}

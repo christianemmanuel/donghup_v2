@@ -1,0 +1,101 @@
+
+.main_nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  .container {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+    display: block;
+    img {
+      max-width: 140px;
+    }
+  }
+
+  nav {
+    position: relative;
+    margin-left: auto;
+    font-family: 'Conv_aller_Bold';
+    ul {
+      display: flex;
+      li {
+        margin-bottom: 0;
+        position: relative;
+        &.active,
+        &.current-menu-item,
+        &:hover {
+          a {
+            background-color: $blue;
+            color: $white;
+          }
+          ul {
+            opacity: 1 !important;
+            visibility: visible !important;
+            display: block;
+          }
+        }
+        &.active,
+        &.current-menu-item {
+          ul {
+            display: flex;
+          }
+        }
+        a {
+          text-transform: uppercase;
+          font-size: 17px;
+          line-height: 1.4955em;
+          font-weight: 800;
+          color: $blue;
+          padding: 8px 13px;
+          display: block;
+          border-radius: 6px;
+        }
+
+        ul {
+          display: block;
+          overflow: hidden;
+          position: absolute;
+          border-radius: 4px;
+          opacity: 1;
+          visibility: visible;
+          transform: none;
+          min-width: auto;
+          background-color: transparent;
+          box-shadow: 0 3px 5px #c7c7c76b;
+          padding: 0;
+          flex-direction: row;
+          white-space: nowrap;
+          padding-top: 10px;
+          visibility: hidden;
+          opacity: 0;
+          transition: all ease-in-out 180ms;
+          z-index: 999;
+          li {
+            margin-bottom: 0;
+            a {
+              color: #ffffff !important;
+              border-radius: 0;
+              font-size: 14px;
+              background-color: #373c8e !important;
+              padding: 12px;
+              &:hover {
+                background-color: #adc5cc !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
