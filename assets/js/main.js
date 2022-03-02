@@ -1,16 +1,19 @@
 $(document).ready(function(){
-
   $('#toggle-menu').click(function() {
     $(this).toggleClass('active');
-    $('.sidebar-container').toggleClass('sidebar-toggle')
+    $('body').toggleClass('menu-toggle')
+    $('#topnav').slideToggle();
   })
-  
-  $(window).scroll(function () {
-    $('#toggle-menu').removeClass('active');
-    $('.sidebar-container').removeClass('sidebar-toggle')
-  });
 
-  $('#navigation').navpoints({
-    offset: 70
+  $('#navigation, #topnav').navScroll();
+
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+    margin: 10,
+    autoHeight: true,
+    loop: false,
+    margin: 10,
+    nav: true,
+    dots: true,
   });
 });

@@ -19,6 +19,8 @@
   <!-- font-family: 'Montserrat', sans-serif; -->
 
   <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/lightbox.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
 
   <meta name="theme-color" content="#87754e">
@@ -27,10 +29,29 @@
 <body>
 
   <div id="app">
+    <div class="topnav">
+      <div class="container-fluid">
+        <ul id="topnav">
+          <li><a class="active" href="#hero">Home</a></li>
+          <li><a href="#mission-vision">Mission &amp; Mission</a></li>
+          <li><a href="#our-history-section">Our History</a></li>
+          <li><a href="#banquet-halls">Banquet Halls</a></li>
+          <li><a href="#our-menu">Our Menu</a>
+            <ul>
+              <li><a href="https://www.donghup.com/menu-page-and-booking">Menu Page and Booking</a></li>
+              <li><a href="https://www.donghup.com/promotion-1">Promotion</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+
+        <button id="toggle-menu">Toggle Menu</button>
+      </div>
+    </div>
     <header class="hero" id="hero">
       <div class="mobile-welcome">
         <div class="welcome-mobile-detail">
-          <h2>Welcome to</h2>
+          <h2>Welcome</h2>
           <img src="./assets/img/logo-bg.webp" alt="Logo">
         </div>
       </div>
@@ -42,20 +63,30 @@
         </div>
         <nav>
           <ul id="navigation">
-            <li><a class="active" href="#hero">Home</a></li>
+            <!-- <li><a class="active" href="#hero">Home</a></li>
             <li><a href="#three-info">About Us</a></li>
             <li><a href="#our-history">Outlets</a></li>
             <li><a href="#our-menu">Our Menu</a></li>
             <li><a href="#our-menu">Promotions</a></li>
             <li><a href="#banquet-halls">Banquet Halls</a></li>
             <li><a href="#contact-us">Front Desk</a></li>
-            <li><a href="#contact-us">Customer Review</a></li>
+            <li><a href="#contact-us">Customer Review</a></li> -->
+            <li><a class="active" href="#hero">Home</a></li>
+            <li><a href="#mission-vision">Mission &amp; Mission</a></li>
+            <li><a href="#our-history-section">Our History</a></li>
+            <li><a href="#banquet-halls">Banquet Halls</a></li>
+            <li><a href="#our-menu">Our Menu</a>
+              <ul>
+                <li><a href="https://www.donghup.com/menu-page-and-booking">Menu Page and Booking</a></li>
+                <li><a href="https://www.donghup.com/promotion-1">Promotion</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact-us">Contact Us</a></li>
           </ul>
         </nav>
         <div class="yellow-wave"></div>
       </div>
 
-      <button id="toggle-menu">Toggle Menu</button>
     </header>
 
     <div class="main-content border-top">
@@ -67,21 +98,24 @@
               <div></div>
               <div class="welcome-to-heading hide-mb-992">
                 <div class="heading-text">
-                  <h2>Welcome to</h2>
+                  <h2>Welcome</h2>
                 </div>
                 <img src="./assets/img/logo-bg.webp" alt="Logo">
               </div>
-              <div>
-                <ul>
-                  <li>
-                    <p>Founder.</p>
-                    <h3>Hee Chin Wooi</h3>
-                  </li>
-                  <li>
-                    <p>Dong Hup Group Established on</p>
-                    <h3>Year 2016</h3>
-                  </li>
-                </ul>
+              <div></div>
+            </div>
+
+            <div class="chef-qoute-container">
+              <div class="chef-qoute-detail">
+                <div class="photo">
+                  <img src="./assets/img/chef.webp" alt="Founder photo">
+                </div>
+                <div class="qoute">
+                  <h5>"My mission to make sure our high quality of food can be deliver to all around the world."</h5>
+                  <div class="founder-name">
+                    <p><span>Jacky Hee</span> Founder of Dong Hup Group</p>
+                  </div>
+                </div>
               </div>
             </div>
   
@@ -176,7 +210,7 @@
         </div>
       </section>
 
-      <section id="three-info">
+      <!-- <section id="three-info">
         <div class="container-fluid">
           <div class="three-info-container">
             <div class="grid_wrapper__3 text__center">
@@ -216,14 +250,67 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section id="banquet-halls">
         <div class="banquet-halls-content border-top">
           <div class="heading-text heading-text-lg">
             <h2>Banquet Halls</h2>
           </div>
-          <img class="banquet-halls-img" src="./assets/img/banquet-halls.webp" alt="Banquet Halls">
+          <div class="container-fluid">
+            <div class="owl-carousel">
+              <div class="item-img">
+                <a href="./assets/img/banquet-hall-page/Banquet-Hall-1.jpg" data-lightbox="Image-Lightbox">
+                  <img src="./assets/img/banquet-hall-page/Banquet-Hall-1.jpg" alt="Image" alt="Banquet Halls">
+                </a>
+              </div>
+              <div class="item-img">
+                <a href="./assets/img/banquet-hall-page/Banquet-Hall-2.jpg" data-lightbox="Image-Lightbox">
+                  <img src="./assets/img/banquet-hall-page/Banquet-Hall-2.jpg" alt="Image" alt="Banquet Halls">
+                </a>
+              </div>
+              <div class="item-img">
+                <a href="./assets/img/banquet-hall-page/Banquet-Hall-3.jpg" data-lightbox="Image-Lightbox">
+                  <img src="./assets/img/banquet-hall-page/Banquet-Hall-3.jpg" alt="Image" alt="Banquet Halls">
+                </a>
+              </div>
+              <div class="item-img">
+                <a href="./assets/img/banquet-hall-page/Banquet-Hall-4.jpg" data-lightbox="Image-Lightbox">
+                  <img src="./assets/img/banquet-hall-page/Banquet-Hall-4.jpg" alt="Image" alt="Banquet Halls">
+                </a>
+              </div>
+              <div class="item-img">
+                <a href="./assets/img/banquet-hall-page/Banquet-Hall-5.jpg" data-lightbox="Image-Lightbox">
+                  <img src="./assets/img/banquet-hall-page/Banquet-Hall-5.jpg" alt="Image" alt="Banquet Halls">
+                </a>
+              </div>
+              <div class="item-img">
+                <a href="./assets/img/banquet-hall-page/Banquet-Hall-6.jpg" data-lightbox="Image-Lightbox">
+                  <img src="./assets/img/banquet-hall-page/Banquet-Hall-6.jpg" alt="Image" alt="Banquet Halls">
+                </a>
+              </div>
+              <div class="item-img">
+                <a href="./assets/img/banquet-hall-page/Banquet-Hall-7.jpg" data-lightbox="Image-Lightbox">
+                  <img src="./assets/img/banquet-hall-page/Banquet-Hall-7.jpg" alt="Image" alt="Banquet Halls">
+                </a>
+              </div>
+              <div class="item-img">
+                <a href="./assets/img/banquet-hall-page/Banquet-Hall-8.jpg" data-lightbox="Image-Lightbox">
+                  <img src="./assets/img/banquet-hall-page/Banquet-Hall-8.jpg" alt="Image" alt="Banquet Halls">
+                </a>
+              </div>
+              <div class="item-img">
+                <a href="./assets/img/banquet-hall-page/Banquet-Hall-9.jpg" data-lightbox="Image-Lightbox">
+                  <img src="./assets/img/banquet-hall-page/Banquet-Hall-9.jpg" alt="Image" alt="Banquet Halls">
+                </a>
+              </div>
+              <div class="item-img">
+                <a href="./assets/img/banquet-hall-page/Banquet-Hall-10.jpg" data-lightbox="Image-Lightbox">
+                  <img src="./assets/img/banquet-hall-page/Banquet-Hall-10.jpg" alt="Image" alt="Banquet Halls">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -237,19 +324,19 @@
             <div class="our-menu-container">
               <div class="grid_wrapper__3 text__center">
                 <div class="our-menu-btn">
-                  <a href="#" class="heading-text heading-text-sm">
+                  <a href="https://www.donghup.com/menu-page-and-booking" target="_blank" class="heading-text heading-text-sm">
                     <h2>Menu</h2>
                   </a>
                 </div>
   
                 <div class="our-menu-btn">
-                  <a href="#" class="heading-text heading-text-sm">
+                  <a href="https://www.donghup.com/menu-page-and-booking" target="_blank" class="heading-text heading-text-sm">
                     <h2>Booking</h2>
                   </a>
                 </div>
   
                 <div class="our-menu-btn">
-                  <a href="#" class="heading-text heading-text-sm">
+                  <a href="https://www.donghup.com/promotion-1" target="_blank" class="heading-text heading-text-sm">
                     <h2>Promotion</h2>
                   </a>
                 </div>
@@ -262,7 +349,7 @@
       <section id="restaurant">
         <div class="restaurant-content border-top">
           <div class="heading-text heading-text-lg">
-            <h2>Our Menu</h2>
+            <h2>Restaurant</h2>
           </div>
           
           <div class="container-fluid">
@@ -270,30 +357,34 @@
               <div class="restaurant-info text__center">
                 
                 <div class="restaurant-item">
-                  <a href="#">
+                  <a href="https://wa.me/60122123822" target="_blank">
                     <img src="./assets/img/restaurant-img-1.jpg" alt="Food">
-                    <p>东顺贵宾酒家 - <br> New Ts VIP Restaurant <br> (ICC)</p>
+                    <p>東順貴賓酒家 (金保路） - <br> NEW TS VIP RESTAURANT <br> (ICC BRANCH)</p>
+                    <span class="btn">Book now</span>
                   </a>
                 </div>
   
                 <div class="restaurant-item">
-                  <a href="#">
+                  <a href="https://wa.me/60173221110" target="_blank">
                     <img src="./assets/img/restaurant-img-2.jpg" alt="Food">
-                    <p>Exquisite <br> Seafood Restaurant</p>
+                    <p>東勝海鮮酒家 <br> EXQUISITE SEAFOOD RESTAURANT</p>
+                    <span class="btn">Book now</span>
                   </a>
                 </div>
   
                 <div class="restaurant-item">
-                  <a href="#">
+                  <a href="https://wa.me/60126996661" target="_blank">
                     <img src="./assets/img/restaurant-img-3.jpg" alt="Food">
-                    <p>东顺贵宾酒家 - <br> New Ts VIP Restaurant <br> (FALIM)</p>
+                    <p>東順貴賓酒家 (萬里望分行) - <br> NEW TS VIP RESTAURANT <br> (MENGLEMBU BRANCH)</p>
+                    <span class="btn">Book now</span>
                   </a>
                 </div>
   
                 <div class="restaurant-item">
-                  <a href="#">
+                  <a href="javascript:void(0)">
                     <img src="./assets/img/restaurant-img-4.jpg" alt="Food">
-                    <p>Frozen Food)</p>
+                    <p>東發冷藏食品 <br> DONG FATT FROZEN FOOD</p>
+                    <span class="btn">Order now</span>
                   </a>
                 </div>
   
@@ -314,11 +405,11 @@
             </div>
 
             <div class="three-img-item">
-              <img src="./assets/img/logo-2.png" alt="Logo">
+              <img src="./assets/img/logo-3.png" alt="Logo">
             </div>
 
             <div class="three-img-item">
-              <img src="./assets/img/logo-3.png" alt="Logo">
+              <img src="./assets/img/logo-2.png" alt="Logo">
             </div>
           </div>
         </div>
@@ -340,11 +431,11 @@
   
               <div class="contact-content">
                 <div class="contact-detail">
-                  <h4>IPOH CITY & COUNTRY CLUB - HQ</h4>
+                  <h4>東順貴賓酒家 (金保路) <br> NEW TS VIP RESTAURANT (ICC BRANCH)</h4>
                   <ul>
-                    <li><p>NO. 283, Jalan Raja Permaisuri Bainun, Taman Mansion, 30250 Ipoh, Perak.</p></li>
-                    <li><p>Tel : 05- 255 6688  / 012 - 212 3822</p></li>
-                    <li><p>(Hotline) / 05-241 8668</p></li>
+                    <li><p><a href="https://www.google.com/search?q=283%2C+Jalan+Raja+Permaisuri+Bainun%2C+Taman+Mansion%2C+30250+Ipoh%2C+Perak%2C+Malaysia&oq=283%2C+Jalan+Raja+Permaisuri+Bainun%2C+Taman+Mansion%2C+30250+Ipoh%2C+Perak%2C+Malaysia&aqs=chrome..69i57.614j0j9&sourceid=chrome&ie=UTF-8" target="_blank">No. 283, Jalan Raja Permaisuri Bainum, Taman Mansion, 30250 Ipoh Perak</a></p></li>
+                    <li><p><a href="tel:052556688">05-255 6688</a></p></li>
+                    <li><p><a href="tel:0122123822">012-212 3822</a></p></li>
                   </ul>
                 </div>
               </div>
@@ -359,11 +450,11 @@
   
               <div class="contact-content">
                 <div class="contact-detail">
-                  <h4>New T S VIP RESTAURANT SDN.BHD. -Branch</h4>
+                  <h4>東勝海鮮酒家 <br> Exquisite Seafood Restaurant</h4>
                   <ul>
-                    <li><p>Block B, 1134B, Hala Perusahaan Menglembu 5, Kawasan Perindusterian Menglembu 31450 Ipoh, Perak.</p></li>
-                    <li><p>Tel : 05- 282 3088 / 012 - 699 6661</p></li>
-                    <li><p>(Hotline) / 05 - 282 1088</p></li>
+                    <li><p><a href="https://www.google.com/search?q=283%2C+Jalan+Raja+Permaisuri+Bainun%2C+Taman+Mansion%2C+30250+Ipoh%2C+Perak%2C+Malaysia&oq=283%2C+Jalan+Raja+Permaisuri+Bainun%2C+Taman+Mansion%2C+30250+Ipoh%2C+Perak%2C+Malaysia&aqs=chrome..69i57.614j0j9&sourceid=chrome&ie=UTF-8#" target="_blank">Lot PT 207737,Jalan Bercham Bidtari 3,Medan Bercham Bidtari,31400 Ipoh,Perak</a></p></li>
+                    <li><p><a href="tel:055481888">05-548 1888</a></p></li>
+                    <li><p><a href="tel:0173221110">017-322 1110</a></p></li>
                   </ul>
                 </div>
               </div>
@@ -378,11 +469,11 @@
   
               <div class="contact-content">
                 <div class="contact-detail">
-                  <h4>Bercham - Branch</h4>
+                  <h4>東順貴賓酒家 (萬里望分行) <br> NEW TS VIP RESTAURANT(MENGLEMBU BRANCH)</h4>
                   <ul>
-                    <li><p>Lot Pt 207737, Bercham Bostari3, Medan Berchan Bistari, 31400 Ipoh, Perak.</p></li>
-                    <li><p>Tel: 05- 548 1888 / 012 - 699 6661</p></li>
-                    <li><p>(Hotline) / 05-545 6688</p></li>
+                    <li><p><a href="https://goo.gl/maps/2xrziax2LBDXeTRw9" target="_blank">Block B, 1134B, Hala Perusahaan Menglembu 5, Kawasan Perindustrian Menglembu 31450 Ipoh Perak</a></p></li>
+                    <li><p><a href="tel:052823088">05-282 3088</a></p></li>
+                    <li><p><a href="tel:0126996661">012-699 6661</a></p></li>
                   </ul>
                 </div>
               </div>
@@ -395,7 +486,9 @@
   </div>
 
   <script src="assets/js/jquery-3.4.1.min.js"></script>
-  <script src="assets/js/jquery.navpoints.min.js"></script>
+  <script src="assets/js/jquery.navScroll.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/lightbox.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -104,15 +104,12 @@
         height: 100px;
       }
     }
-    &.sidebar-toggle {
-      transform: translateX(0);
-    }
   }
   button#toggle-menu {
     position: absolute;
     display: block;
-    top: 20px;
-    right: 25px;
+    top: 13px;
+    right: 0;
     width: 43px;
     height: 43px;
     overflow: hidden;
@@ -146,6 +143,9 @@
       gap: 25px;
       grid-template-columns: repeat(1, 1fr);
     }
+  }
+  #mission-vision {
+    padding-top: 40px;
   }
   #our-history-section {
     padding-top: 120px;
@@ -224,7 +224,32 @@
       grid-template-columns: repeat(1, 1fr);
     }
   }
-
+  #topnav {
+    position: fixed;
+    top: 68px;
+    background-color: #c61f26;
+    width: 100%;
+    left: 0;
+    height: auto;
+    display: none;
+  }
+  .topnav {
+    ul {
+      li {
+        a {
+          padding: 12px 13px;
+          border-bottom: 1px solid #a90f15;
+        }
+        ul {
+          opacity: 1;
+          visibility: visible;
+          position: relative;
+          margin-top: 0;
+          background: #c01c22;
+        }
+      }
+    }
+  }
 }
 
 
@@ -251,6 +276,11 @@
   #contact-us {
     margin-top: 45px;
   }
+  .chef-qoute-container {
+    .chef-qoute-detail {
+      flex-direction: column;
+    }
+  }
 }
 
 @media (max-width: 676px) {
@@ -264,6 +294,9 @@
     p {
       font-size: 17px;
     }
+  }
+  button#toggle-menu {
+    right: 20px;
   }
 }
 
