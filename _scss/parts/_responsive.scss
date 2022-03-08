@@ -300,9 +300,28 @@
   }
 }
 
+@media (max-width: 420px) {
+  .heading-text.heading-text-lg {
+    transform: scale(0.6);
+    padding: 0;
+  }
+  .contact-content h4 {
+    font-size: 1.35rem;
+  }
+  .heading-text-sm:before {
+    left: -22px;
+  }
+  .container-fluid {
+    padding: 0 25px;
+  }
+}
+
 @media (max-width: 375px) {
   .heading-text.heading-text-lg {
     zoom: 0.8;
+  }
+  .heading-text:after {
+    right: -28.5px;
   }
   #our-history-section {
     padding-top: 70px;

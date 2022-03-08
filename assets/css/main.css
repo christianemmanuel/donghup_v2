@@ -530,18 +530,6 @@ header {
     width: 100%; }
     .restaurant-container .restaurant-item p {
       font-size: 18px; }
-    .restaurant-container .restaurant-item span.btn {
-      display: inline-block;
-      border: 4px double #f9b55c;
-      line-height: 1em;
-      color: #f9b55c;
-      background-color: #c61f26;
-      font-family: 'Montserrat', sans-serif;
-      padding: 9px 14px;
-      transition: all ease-in-out 180ms; }
-      .restaurant-container .restaurant-item span.btn:hover {
-        background-color: #1f1f21;
-        color: #ffffff; }
   .restaurant-container a {
     display: block;
     transition: all ease-in-out 180ms; }
@@ -588,6 +576,7 @@ header {
 .contact-content {
   text-align: left; }
   .contact-content ul {
+    margin-bottom: 20px;
     text-align: left; }
     .contact-content ul li {
       position: relative;
@@ -602,7 +591,7 @@ header {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center left;
-        top: -3px;
+        top: 1px;
         left: 0; }
       .contact-content ul li:nth-child(1)::before {
         background-image: url("../img/icon-location.svg"); }
@@ -613,7 +602,7 @@ header {
       .contact-content ul li a {
         color: #1f1f21;
         display: block;
-        line-height: 1em; }
+        line-height: 1.35em; }
   .contact-content h4 {
     margin-bottom: 2rem; }
 
@@ -716,6 +705,21 @@ header {
     background-color: rgba(198, 31, 38, 0.5); }
   .owl-nav span[aria-label="Next"] {
     transform: scaleX(-1) scale(1); }
+
+span.btn,
+a.btn {
+  display: inline-block;
+  border: 4px double #f9b55c;
+  line-height: 1em;
+  color: #f9b55c;
+  background-color: #c61f26;
+  font-family: 'Montserrat', sans-serif;
+  padding: 9px 14px;
+  transition: all ease-in-out 180ms; }
+  span.btn:hover,
+  a.btn:hover {
+    background-color: #1f1f21;
+    color: #ffffff; }
 
 @media (max-width: 1200px) {
   #our-history-section .timeline-info {
@@ -947,10 +951,25 @@ header {
 
   button#toggle-menu {
     right: 20px; } }
+@media (max-width: 420px) {
+  .heading-text.heading-text-lg {
+    transform: scale(0.6);
+    padding: 0; }
+
+  .contact-content h4 {
+    font-size: 1.35rem; }
+
+  .heading-text-sm:before {
+    left: -22px; }
+
+  .container-fluid {
+    padding: 0 25px; } }
 @media (max-width: 375px) {
   .heading-text.heading-text-lg {
     zoom: 0.8; }
 
+  .heading-text:after {
+    right: -28.5px; }
+
   #our-history-section {
     padding-top: 70px; } }
-    

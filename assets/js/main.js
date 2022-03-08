@@ -5,7 +5,7 @@ $(document).ready(function(){
     $('#topnav').slideToggle();
   })
 
-  $('#navigation, #topnav').navScroll();
+  $('#navigation, #topnav, #menu-contact').navScroll();
 
   $('.owl-carousel').owlCarousel({
     items: 1,

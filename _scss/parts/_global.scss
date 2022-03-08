@@ -633,20 +633,6 @@ header {
     }
     display: block;
     width: 100%;
-    span.btn {
-      display: inline-block;
-      border: 4px double $yellow;
-      line-height: 1em;
-      color: $yellow;
-      background-color: $red;
-      font-family: 'Montserrat', sans-serif;
-      padding: 9px 14px;
-      transition: all ease-in-out 180ms;
-      &:hover {
-        background-color: $textColor;
-        color: $white;
-      }
-    }
   }
   a {
     display: block;
@@ -705,6 +691,7 @@ header {
 .contact-content {
   text-align: left;
   ul {
+    margin-bottom: 20px;
     text-align: left;
     li {
       position: relative;
@@ -720,7 +707,7 @@ header {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center left;
-        top: -3px;
+        top: 1px;
         left: 0;
       }
       &:nth-child(1) {
@@ -741,7 +728,7 @@ header {
       a {
         color: $textColor;
         display: block;
-        line-height: 1em;
+        line-height: 1.35em;
       }
     }
   }
@@ -861,5 +848,24 @@ header {
   }
   span[aria-label="Next"] {
     transform: scaleX(-1) scale(1);
+  }
+}
+
+
+span,
+a {
+  &.btn {
+    display: inline-block;
+    border: 4px double $yellow;
+    line-height: 1em;
+    color: $yellow;
+    background-color: $red;
+    font-family: 'Montserrat', sans-serif;
+    padding: 9px 14px;
+    transition: all ease-in-out 180ms;
+    &:hover {
+      background-color: $textColor;
+      color: $white;
+    }
   }
 }
