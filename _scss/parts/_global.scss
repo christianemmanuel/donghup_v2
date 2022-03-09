@@ -241,6 +241,8 @@ header {
     a {
       display: inline-block;
       margin: auto;
+      position: relative;
+      left: 13px;
     }
   }
   nav {
@@ -378,7 +380,7 @@ header {
 .welcome-container {
   img {
     margin: auto;
-    transform: translateY(-4px);
+    transform: translate(20px, -4px);
   }
   p { margin-bottom: 0; }
   h3 { margin-top: .25rem }
@@ -565,6 +567,37 @@ header {
     padding: 80px 0 200px 0;
   }
   .our-menu-btn {
+    position: relative;
+    .dropdown-menu {
+      display: flex;
+      opacity: 0;
+      visibility: hidden;
+      transition: all ease-in-out 180ms;
+      flex-direction: column;
+      justify-content: center;
+      width: 76%;
+      margin: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 6;
+      a {
+        background: $red;
+        color: $yellow;
+        border: 1px solid $yellow;
+        display: flex;
+        flex-direction: column;
+        min-height: 70px;
+        justify-content: center;
+        padding: 15px 10px;
+      }
+    }
+    &:hover {
+      .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
     .heading-text-sm {
       width: 73%;
       h2 {
@@ -579,10 +612,10 @@ header {
     }
     @keyframes shake {
 		  0% {
-		    transform: translate(3px, 0);
+		    transform: translate(1px, 0);
 		  }
 		  50% {
-		    transform: translate(-3px, 0);
+		    transform: translate(-1px, 0);
 		  }
 		  100% {
 		    transform: translate(0, 0);
@@ -591,10 +624,10 @@ header {
 
 		@-moz-keyframes shake {
 		  0% {
-		    -moz-transform: translate(3px, 0);
+		    -moz-transform: translate(1px, 0);
 		  }
 		  50% {
-		    -moz-transform: translate(-3px, 0);
+		    -moz-transform: translate(-1px, 0);
 		  }
 		  100% {
 		    -moz-transform: translate(0, 0);
@@ -603,10 +636,10 @@ header {
 
 		@-webkit-keyframes shake {
 		  0% {
-		    -webkit-transform: translate(3px, 0);
+		    -webkit-transform: translate(1px, 0);
 		  }
 		  50% {
-		    -webkit-transform: translate(-3px, 0);
+		    -webkit-transform: translate(-1px, 0);
 		  }
 		  100% {
 		    -webkit-transform: translate(0, 0);
@@ -748,14 +781,29 @@ header {
   background-color: $red;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   z-index: 999;
-  .container-fluid { height: 100%; }
+  .container-fluid {
+    height: 100%;
+    flex-direction: revert;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 87px;
+  }
+  .top-nav-logo {
+    a {
+      display: block;
+      img {
+        max-width: 160px;
+      }
+    }
+  }
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     height: 100%;
     li {
       position: relative;

@@ -5,7 +5,7 @@ $(document).ready(function(){
     $('#topnav').slideToggle();
   })
 
-  $('#navigation, #topnav, #menu-contact').navScroll();
+  $('#navigation, #topnav, #top-nav-logo').navScroll();
 
   $('.owl-carousel').owlCarousel({
     items: 1,
@@ -15,5 +15,8 @@ $(document).ready(function(){
     margin: 10,
     nav: true,
     dots: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: false
   });
 });
