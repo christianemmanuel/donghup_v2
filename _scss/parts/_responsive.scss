@@ -321,6 +321,17 @@
 }
 
 @media (max-width: 420px) {
+  .logo-content {
+    img {
+      transform: translateX(25px);
+    }
+  }
+  .restaurant-container a {
+    display: block;
+  }
+  #restaurant .restaurant-container .restaurant-info {
+    gap: 25px;
+  }
   .heading-text:after {
     right: -29px;
   }
@@ -353,7 +364,7 @@
     padding: 0 25px;
   }
   .chef-qoute-container {
-    padding-top: 15px;
+    padding: 15px 0;
   }
 }
 

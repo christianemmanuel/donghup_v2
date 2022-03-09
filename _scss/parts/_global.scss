@@ -668,8 +668,10 @@ header {
     width: 100%;
   }
   a {
-    display: block;
+    display: flex;
     transition: all ease-in-out 180ms;
+    height: 100%;
+    flex-direction: column;
     &:hover {
       transform: scale(1.035);
     }
@@ -911,6 +913,8 @@ a {
     font-family: 'Montserrat', sans-serif;
     padding: 9px 14px;
     transition: all ease-in-out 180ms;
+    margin-left: auto;
+    margin-right: auto;
     &:hover {
       background-color: $textColor;
       color: $white;
