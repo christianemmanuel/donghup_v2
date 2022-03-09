@@ -5,8 +5,8 @@ $(document).ready(function(){
     $('#topnav').slideToggle();
   })
 
-  $('#navigation, #topnav, #top-nav-logo').navScroll();
-
+  $('#navigation, #topnav, #top-nav-logo, #mobile-welcome').navScroll();
+ 
   $('.owl-carousel').owlCarousel({
     items: 1,
     margin: 10,

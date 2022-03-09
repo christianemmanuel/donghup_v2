@@ -8,6 +8,18 @@
 
 
 @media (max-width: 992px) {
+  .welcome-container {
+    .welcome-to-heading {
+      .heading-text {
+        transform: scale(0.8);
+      }
+    }
+    img.logo-welcome {
+      margin: auto;
+      transform: translate(20px, -18px);
+      max-width: 180px;
+    }
+  }
   .hide-mb-992 {
     display: none;
   }
@@ -16,6 +28,23 @@
   }
   header {
     height: 650px;
+  }
+  .arrow-bounce {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url("/assets/img/chevron-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 12%;
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite;
+    overflow: hidden;
+    text-indent: -9999px;
   }
   .mobile-welcome {
     position: absolute;
@@ -26,22 +55,7 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: rgba(0, 0, 0, .25);
-    &::after {
-      position: absolute;
-      display: block;
-      content: "";
-      width: 40px;
-      height: 40px;
-      background: url("/assets/img/chevron-down.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      bottom: 10px;
-      animation: bounce 2s infinite;
-      -webkit-animation: bounce 2s infinite;
-      -moz-animation: bounce 2s infinite;
-      -o-animation: bounce 2s infinite;
-    }
+    // background-color: rgba(0, 0, 0, .25);
     h2 {
       color: #f9b55c;
       text-transform: uppercase;
@@ -260,6 +274,9 @@
 
 
 @media (max-width: 768px) {
+  .chef-qoute-container {
+    padding-top: 35px;
+  }
   #restaurant {
     .restaurant-container {
       .restaurant-info {
@@ -304,6 +321,24 @@
 }
 
 @media (max-width: 420px) {
+  .heading-text:after {
+    right: -29px;
+  }
+  header {
+    height: 430px;
+  }
+  .welcome-container {
+    .welcome-to-heading {
+      .heading-text {
+        transform: scale(0.6);
+      }
+    }
+    img.logo-welcome {
+      margin: auto;
+      transform: translate(14px, -32px);
+      max-width: 140px;
+    }
+  }
   .heading-text.heading-text-lg {
     transform: scale(0.6);
     padding: 0;
@@ -316,6 +351,9 @@
   }
   .container-fluid {
     padding: 0 25px;
+  }
+  .chef-qoute-container {
+    padding-top: 15px;
   }
 }
 

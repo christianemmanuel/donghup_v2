@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Conv_Big_Caslon_Medium';
-  src: url("/assets/font/Big_Caslon_Medium/Big_Caslon_Medium.eot");
-  src: local("☺"), url("/assets/font/Big_Caslon_Medium/Big_Caslon_Medium.woff") format("woff"), url("/assets/font/Big_Caslon_Medium/Big_Caslon_Medium.ttf") format("truetype"), url("/assets/font/Big_Caslon_Medium/Big_Caslon_Medium.svg") format("svg");
+  src: url("../font/Big_Caslon_Medium/Big_Caslon_Medium.eot");
+  src: local("☺"), url("../font/Big_Caslon_Medium/Big_Caslon_Medium.woff") format("woff"), url("../font/Big_Caslon_Medium/Big_Caslon_Medium.ttf") format("truetype"), url("../font/Big_Caslon_Medium/Big_Caslon_Medium.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 body, html {
@@ -190,7 +190,7 @@ section {
 
 header {
   height: 800px;
-  background: url("/assets/img/hero.webp");
+  background: url("../img/hero.webp");
   background-size: cover;
   background-position: center top;
   position: relative;
@@ -217,12 +217,12 @@ header {
     width: 5px;
     height: 100%;
     background-repeat: repeat-y;
-    background: url("/assets/img/sidebar-line.png"); }
+    background: url("../img/sidebar-line.png"); }
   .sidebar-container .yellow-wave {
     position: absolute;
     width: 311px;
     height: 53px;
-    background: url("/assets/img/wave.png");
+    background: url("../img/wave.png");
     background-repeat: repeat-x;
     bottom: 0;
     left: 0; }
@@ -273,7 +273,7 @@ header {
     position: absolute;
     display: block;
     content: "";
-    background: url("/assets/img/sidebar-cloud.webp");
+    background: url("../img/sidebar-cloud.webp");
     background-repeat: no-repeat;
     width: 213px;
     height: 124px;
@@ -295,7 +295,7 @@ header {
   width: max-content;
   height: 151px;
   position: relative;
-  background-image: url(/assets/img/heading-bg-parts.png);
+  background-image: url(../img/heading-bg-parts.png);
   background-repeat: repeat-x;
   display: flex;
   align-items: center;
@@ -304,11 +304,11 @@ header {
   margin: auto;
   padding: 0 30px; }
   .heading-text:after {
-    background-image: url(/assets/img/heading-bg-right-parts.png);
+    background-image: url(../img/heading-bg-right-parts.png);
     right: -29.5px;
     width: 30px; }
   .heading-text:before {
-    background-image: url(/assets/img/heading-bg-left-parts.png);
+    background-image: url(../img/heading-bg-left-parts.png);
     left: -37.5px;
     width: 38px; }
   .heading-text:after, .heading-text:before {
@@ -352,7 +352,7 @@ header {
 
 .gold-border {
   position: relative;
-  background-image: url(/assets/img/border-gold.png);
+  background-image: url(../img/border-gold.png);
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -370,7 +370,7 @@ header {
   padding-top: 170px;
   margin-top: 30px;
   position: relative;
-  background-image: url(/assets/img/bg-wave.png);
+  background-image: url(../img/bg-wave.png);
   background-repeat: repeat;
   background-position: center;
   background-size: contain; }
@@ -418,14 +418,14 @@ header {
         content: "";
         width: 50px;
         height: 50px;
-        background-image: url(/assets/img/flower.png);
+        background-image: url(../img/flower.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
         left: 0; }
   #our-history-section .timeline-info {
     position: relative;
-    background-image: url(/assets/img/timeline-bg.png);
+    background-image: url(../img/timeline-bg.png);
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -466,7 +466,7 @@ header {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-image: url(/assets/img/flower.png);
+    background-image: url(../img/flower.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -480,7 +480,7 @@ header {
 
 .our-menu-content {
   position: relative;
-  background-image: url(/assets/img/bg-wave.png);
+  background-image: url(../img/bg-wave.png);
   background-repeat: repeat;
   background-position: center;
   background-size: contain; }
@@ -573,7 +573,7 @@ header {
 
 #logos-section {
   position: relative;
-  background-image: url(/assets/img/bg-wave.png);
+  background-image: url(../img/bg-wave.png);
   background-repeat: repeat;
   background-position: center;
   background-size: contain; }
@@ -623,11 +623,11 @@ header {
         top: 1px;
         left: 0; }
       .contact-content ul li:nth-child(1)::before {
-        background-image: url("/assets/img/icon-location.svg"); }
+        background-image: url("../img/icon-location.svg"); }
       .contact-content ul li:nth-child(2)::before {
-        background-image: url("/assets/img/icon-call.svg"); }
+        background-image: url("../img/icon-call.svg"); }
       .contact-content ul li:nth-child(3)::before {
-        background-image: url("/assets/img/icon-fax.svg"); }
+        background-image: url("../img/icon-fax.svg"); }
       .contact-content ul li a {
         color: #1f1f21;
         display: block;
@@ -737,7 +737,7 @@ header {
     position: relative;
     overflow: hidden;
     text-indent: -999px;
-    background: url("/assets/img/chevron-left.svg");
+    background: url("../img/chevron-left.svg");
     background-size: contain;
     background-position: center;
     background-color: rgba(198, 31, 38, 0.5); }
@@ -763,6 +763,13 @@ a.btn {
   #our-history-section .timeline-info {
     min-height: 163px; } }
 @media (max-width: 992px) {
+  .welcome-container .welcome-to-heading .heading-text {
+    transform: scale(0.8); }
+  .welcome-container img.logo-welcome {
+    margin: auto;
+    transform: translate(20px, -18px);
+    max-width: 180px; }
+
   .hide-mb-992 {
     display: none; }
 
@@ -772,6 +779,23 @@ a.btn {
   header {
     height: 650px; }
 
+  .arrow-bounce {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url("../img/chevron-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 12%;
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite;
+    overflow: hidden;
+    text-indent: -9999px; }
+
   .mobile-welcome {
     position: absolute;
     display: block;
@@ -780,22 +804,7 @@ a.btn {
     justify-content: center;
     width: 100%;
     height: 100%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.25); }
-    .mobile-welcome::after {
-      position: absolute;
-      display: block;
-      content: "";
-      width: 40px;
-      height: 40px;
-      background: url("/assets/img/chevron-down.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      bottom: 10px;
-      animation: bounce 2s infinite;
-      -webkit-animation: bounce 2s infinite;
-      -moz-animation: bounce 2s infinite;
-      -o-animation: bounce 2s infinite; }
+    text-align: center; }
     .mobile-welcome h2 {
       color: #f9b55c;
       text-transform: uppercase;
@@ -847,7 +856,7 @@ a.btn {
       .sidebar-container .logo img {
         display: none; }
       .sidebar-container .logo a {
-        background: url("/assets/img/mobile-logo.png");
+        background: url("../img/mobile-logo.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -866,12 +875,12 @@ a.btn {
     outline: none;
     border: none;
     background-color: transparent;
-    background: url("/assets/img/menu.svg");
+    background: url("../img/menu.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
     button#toggle-menu.active {
-      background: url("/assets/img/close.svg"); }
+      background: url("../img/close.svg"); }
 
   .container-fluid {
     width: 95%; }
@@ -963,6 +972,9 @@ a.btn {
   .topnav .container-fluid {
     padding: 0 20px; } }
 @media (max-width: 768px) {
+  .chef-qoute-container {
+    padding-top: 35px; }
+
   #restaurant .restaurant-container .restaurant-info {
     display: grid;
     grid-template-columns: repeat(1, 1fr); }
@@ -985,12 +997,25 @@ a.btn {
     width: 100%; }
 
   .gold-border {
-    background-image: url(/assets/img/border-gold-big.png);
+    background-image: url(../img/border-gold-big.png);
     min-height: 193px;
     padding: 0 30px; }
     .gold-border p {
       font-size: 17px; } }
 @media (max-width: 420px) {
+  .heading-text:after {
+    right: -29px; }
+
+  header {
+    height: 430px; }
+
+  .welcome-container .welcome-to-heading .heading-text {
+    transform: scale(0.6); }
+  .welcome-container img.logo-welcome {
+    margin: auto;
+    transform: translate(14px, -32px);
+    max-width: 140px; }
+
   .heading-text.heading-text-lg {
     transform: scale(0.6);
     padding: 0; }
@@ -1002,7 +1027,10 @@ a.btn {
     left: -22px; }
 
   .container-fluid {
-    padding: 0 25px; } }
+    padding: 0 25px; }
+
+  .chef-qoute-container {
+    padding-top: 15px; } }
 @media (max-width: 375px) {
   .heading-text.heading-text-lg {
     zoom: 0.8; }
@@ -1012,5 +1040,3 @@ a.btn {
 
   #our-history-section {
     padding-top: 70px; } }
-
-/*# sourceMappingURL=main.css.map */
