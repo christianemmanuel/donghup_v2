@@ -274,6 +274,12 @@
 
 
 @media (max-width: 768px) {
+  .restaurant-container .restaurant-item p {
+    min-height: auto;
+  }
+  .heading-text:after {
+    right: -29px;
+  }
   .chef-qoute-container {
     padding-top: 35px;
   }
@@ -331,9 +337,6 @@
   }
   #restaurant .restaurant-container .restaurant-info {
     gap: 25px;
-  }
-  .heading-text:after {
-    right: -29px;
   }
   header {
     height: 430px;
