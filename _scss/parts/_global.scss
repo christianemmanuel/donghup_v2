@@ -378,9 +378,10 @@ header {
   }
 }
 .welcome-container {
-  img {
+  .logo-donghup {
     margin: auto;
-    transform: translate(20px, -4px);
+    margin-top: 80px;
+    margin-bottom: 20px;
   }
   p { margin-bottom: 0; }
   h3 { margin-top: .25rem }

@@ -11,7 +11,7 @@ $(document).ready(function(){
     items: 1,
     margin: 10,
     autoHeight: true,
-    loop: false,
+    loop: true,
     margin: 10,
     nav: true,
     dots: true,

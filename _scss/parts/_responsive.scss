@@ -14,11 +14,6 @@
         transform: scale(0.8);
       }
     }
-    img.logo-welcome {
-      margin: auto;
-      transform: translate(20px, -18px);
-      max-width: 180px;
-    }
   }
   .hide-mb-992 {
     display: none;
@@ -274,6 +269,11 @@
 
 
 @media (max-width: 768px) {
+  .welcome-container {
+    .logo-donghup {
+      margin-top: 50px;
+    }
+  }
   .restaurant-container .restaurant-item p {
     min-height: auto;
   }
@@ -327,6 +327,15 @@
 }
 
 @media (max-width: 420px) {
+  .welcome-container {
+    .logo-donghup {
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 25px;
+      max-width: 90%;
+    }
+  }
+
   .logo-content {
     img {
       transform: translateX(25px);
@@ -346,11 +355,6 @@
       .heading-text {
         transform: scale(0.6);
       }
-    }
-    img.logo-welcome {
-      margin: auto;
-      transform: translate(14px, -32px);
-      max-width: 140px;
     }
   }
   .heading-text.heading-text-lg {

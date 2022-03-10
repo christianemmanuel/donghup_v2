@@ -336,9 +336,10 @@ header {
   .heading-text-sm h2 {
     font-size: 2.5rem; }
 
-.welcome-container img {
+.welcome-container .logo-donghup {
   margin: auto;
-  transform: translate(20px, -4px); }
+  margin-top: 80px;
+  margin-bottom: 20px; }
 .welcome-container p {
   margin-bottom: 0; }
 .welcome-container h3 {
@@ -766,10 +767,6 @@ a.btn {
 @media (max-width: 992px) {
   .welcome-container .welcome-to-heading .heading-text {
     transform: scale(0.8); }
-  .welcome-container img.logo-welcome {
-    margin: auto;
-    transform: translate(20px, -18px);
-    max-width: 180px; }
 
   .hide-mb-992 {
     display: none; }
@@ -973,6 +970,9 @@ a.btn {
   .topnav .container-fluid {
     padding: 0 20px; } }
 @media (max-width: 768px) {
+  .welcome-container .logo-donghup {
+    margin-top: 50px; }
+
   .restaurant-container .restaurant-item p {
     min-height: auto; }
 
@@ -1010,6 +1010,12 @@ a.btn {
     .gold-border p {
       font-size: 17px; } }
 @media (max-width: 420px) {
+  .welcome-container .logo-donghup {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    max-width: 90%; }
+
   .logo-content img {
     transform: translateX(25px); }
 
@@ -1024,10 +1030,6 @@ a.btn {
 
   .welcome-container .welcome-to-heading .heading-text {
     transform: scale(0.6); }
-  .welcome-container img.logo-welcome {
-    margin: auto;
-    transform: translate(14px, -32px);
-    max-width: 140px; }
 
   .heading-text.heading-text-lg {
     transform: scale(0.6);
